@@ -11,7 +11,7 @@ as: controller
 
 commands:
   build: make build
-  run: ./bin/controller
+  run: ./bin/SERVICE_NAME
 
 inputs:
   - service: imaging
