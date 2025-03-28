@@ -2,7 +2,7 @@
 .PHONY: build start clean test fetch-roverlib-c
 
 BUILD_DIR=bin/
-BINARY_NAME=controller
+BINARY_NAME=SERVICE_NAME
 
 # If not using VSCode's devcontainers, with docker installed you can run this command to
 # build the service inside the container.
