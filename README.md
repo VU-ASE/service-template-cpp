@@ -11,7 +11,7 @@
 
 **When building a service that runs on the Rover and should interface the ASE framework, you will most likely want to use a [roverlib](https://ase.vu.nl/docs/framework/glossary/roverlib). This is a C++ template that is based on [`roverlib-c`](https://github.com/VU-ASE/roverlib-c), meant to run on the Rover.**
 
-## Initialize a C service
+## Initialize a C++ service
 
 Instead of cloning this repository, it is recommended to initialize this C++ service using `roverctl` as follows:
 
