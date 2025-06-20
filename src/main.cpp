@@ -135,8 +135,16 @@ int user_program(Service service, Service_configuration *configuration) {
   }
 }
 
+int on_terminate(int signum) {
+  // This function is called when the service is terminated
+  // You can do any cleanup here, like closing files, sockets, etc.
+  printf("Service terminated with signal %d, gracefully shutting down\n", signum);
+  fflush(stdout); // Ensure all output is printed before exit
+  return 0; // Return 0 to indicate successful termination
+}
+
 // This is just a wrapper to run the user program
 // it is not recommended to put any other logic here
 int main() {
-  return run(user_program);
+  return run(user_program, on_terminate);
 }
